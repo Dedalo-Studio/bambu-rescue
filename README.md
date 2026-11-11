@@ -40,11 +40,12 @@ Durante la modifica di un piatto, Bambu Studio salva salvataggi parziali nella c
 
 ### 📦 Download Diretto
 
-Non è necessario installare Python:
+Non è necessario installare Python: puoi scegliere la modalità che preferisci per Windows:
 
 #### 🪟 Windows
-* 💾 [**Scarica Eseguibile Standalone (`BambuRescue.exe`)**](https://github.com/Dedalo-Studio/bambu-rescue/releases/latest/download/BambuRescue.exe) — *File singolo portatile, avvio immediato*.
-* 📦 [**Scarica Pacchetto Completo (`.zip`)**](https://github.com/Dedalo-Studio/bambu-rescue/releases/latest/download/BambuRescue-v2.1.0-windows.zip) — *Include eseguibile, guida completa e licenza d'uso*.
+* 🎒 [**Versione Portatile (`BambuRescue.exe`)**](https://github.com/Dedalo-Studio/bambu-rescue/releases/latest/download/BambuRescue.exe) — *Singolo eseguibile portatile, avvio immediato senza installazione.*
+* 💿 [**Versione Installabile (`BambuRescue-Setup-v2.1.0.exe`)**](https://github.com/Dedalo-Studio/bambu-rescue/releases/latest/download/BambuRescue-Setup-v2.1.0.exe) — *Installer classico Windows con collegamento nel Menu Start, icona Desktop opzionale e disinstallatore.*
+* 📦 [**Tutto il Progetto (`BambuRescue-v2.1.0-full.zip`)**](https://github.com/Dedalo-Studio/bambu-rescue/releases/latest/download/BambuRescue-v2.1.0-full.zip) — *Archivio `.zip` completo con eseguibile portatile, sorgenti Python, script di avvio, guida, script originali e script installer.*
 
 ---
 
@@ -112,14 +113,16 @@ Built on top of the recovery engine by **小岛秀夫 / 耀阳** (preserved unto
 - 📦 Portable standalone Windows `.exe` (`BambuRescue.exe`).
 
 ### 📦 Direct Downloads
-* 💾 [**Download Portable Executable (`BambuRescue.exe`)**](https://github.com/Dedalo-Studio/bambu-rescue/releases/latest/download/BambuRescue.exe)
-* 📦 [**Download Complete Package (`.zip`)**](https://github.com/Dedalo-Studio/bambu-rescue/releases/latest/download/BambuRescue-v2.1.0-windows.zip)
+* 🎒 [**Portable Version (`BambuRescue.exe`)**](https://github.com/Dedalo-Studio/bambu-rescue/releases/latest/download/BambuRescue.exe) — *Single portable executable, zero installation.*
+* 💿 [**Windows Installer (`BambuRescue-Setup-v2.1.0.exe`)**](https://github.com/Dedalo-Studio/bambu-rescue/releases/latest/download/BambuRescue-Setup-v2.1.0.exe) — *Standard Windows Setup wizard with Start Menu shortcut, optional Desktop icon, and uninstaller.*
+* 📦 [**Full Project Archive (`BambuRescue-v2.1.0-full.zip`)**](https://github.com/Dedalo-Studio/bambu-rescue/releases/latest/download/BambuRescue-v2.1.0-full.zip) — *Complete `.zip` containing the portable `.exe`, Python source code, launcher scripts, documentation, upstream scripts, and Inno Setup script.*
 
-### 🛠️ Building Standalone `.exe`
+### 🛠️ Building Standalone `.exe` & Installer
 ```powershell
 pip install -r requirements.txt pyinstaller
 python -m PyInstaller --onefile --noconsole --name "BambuRescue" --icon "app_icon.ico" --add-data "app_icon.ico;." --collect-all customtkinter --clean recupero_bambu_3mf_gui.py
 ```
+To build the Windows installer (`BambuRescue-Setup-v2.1.0.exe`), compile the `--onedir` bundle into `build_inst\dist\BambuRescue` and run Inno Setup 6 (`ISCC.exe installer.iss`).
 
 ---
 

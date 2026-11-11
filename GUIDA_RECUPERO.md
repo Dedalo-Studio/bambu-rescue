@@ -31,12 +31,14 @@ L'applicazione utilizza un tema dark moderno ispirato a Bambu Studio:
 
 ## 🚀 Come Avviare l'Applicazione
 
-### Opzione A: Eseguibile Standalone (Consigliata)
-- Fai doppio clic su **`BambuRescue.exe`**.
-- È un **singolo file eseguibile portatile**: funziona su qualsiasi PC Windows 10/11 senza bisogno di installare Python.
+### Opzione A: Versione Portatile (`BambuRescue.exe`)
+- Fai doppio clic su **`BambuRescue.exe`**: è un singolo file portatile, funziona subito senza installare nulla né Python.
 
-### Opzione B: Script Batch / Sorgente Python
-- Fai doppio clic su **`Avvia_Recupero_Bambu.bat`** oppure esegui `python recupero_bambu_3mf_gui.py`.
+### Opzione B: Versione Installabile (`BambuRescue-Setup-v2.1.0.exe`)
+- Avvia il programma di installazione guidato su Windows: installa l'app nel sistema, crea il collegamento nel Menu Start (e opzionalmente sul Desktop) e offre avvio immediato + disinstallazione standard da Windows.
+
+### Opzione C: Archivio Completo / Sorgente Python
+- Estrai lo `.zip` completo del progetto e avvia **`Avvia_Recupero_Bambu.bat`** oppure `python recupero_bambu_3mf_gui.py`.
 
 ---
 
