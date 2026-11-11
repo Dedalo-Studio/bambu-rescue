@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.spec
+
+# Build & Packaging
+build/
+dist/
+*.egg-info/
+*.exe
+
+# Virtual environment
+venv/
+env/
+.env
+
+# Test & 3D Model files (large / private / backups)
+*.3mf
+*.gcode
+*.stl
+*.step
+*.parziale
+*_backup_sorgente_*.zip
+
+# Local promotional drafts / personal media
+Gemini_Generated_Image_*
+
+# Windows
+*.lnk
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
